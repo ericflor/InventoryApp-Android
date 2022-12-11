@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DisplayInventory" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="16dp"
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            app:layout_constraintBaseline_toBaselineOf="@+id/count"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:text="count"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:onClick="run"
+            android:text="+"
+            tools:layout_editor_absoluteX="307dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Button
+            android:id="@+id/subtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:onClick="run"
+            android:text="-"
+            tools:layout_editor_absoluteX="181dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+    </RelativeLayout>
+</ScrollView>

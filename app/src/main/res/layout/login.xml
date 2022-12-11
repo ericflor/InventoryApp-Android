@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="10dp"
+    tools:context=".Login">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="485dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/image_1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/red_hat_text"
+        android:text="@string/itrack_login"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="281dp" />
+
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="348dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:fontFamily="@font/red_hat_text"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="490dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="348dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:fontFamily="@font/red_hat_text"
+        android:hint="Email"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="410dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="89dp"
+        android:background="#5197E9"
+        android:text="Login"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginBottom="89dp"
+        android:background="#5197E9"
+        android:text="Register"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

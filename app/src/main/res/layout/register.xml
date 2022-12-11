@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="10dp"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="485dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/image_1" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="21dp"
+        android:fontFamily="@font/red_hat_text"
+        android:text="iTrack | Register"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="348dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:fontFamily="@font/red_hat_text"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="348dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:fontFamily="@font/red_hat_text"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/confirmPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="348dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="58dp"
+        android:ems="10"
+        android:fontFamily="@font/red_hat_text"
+        android:hint="@string/repeat_password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="96dp"
+        android:background="#5197E9"
+        android:text="Register"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cancel" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="96dp"
+        android:background="#5197E9"
+        android:text="Cancel"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
